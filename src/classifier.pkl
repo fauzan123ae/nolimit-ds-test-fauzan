@@ -1,0 +1,6 @@
+import pickle
+
+with open("../src/classifier.pkl", "wb") as f:
+    pickle.dump(classifier, f)
+
+print("Model berhasil disimpan")
