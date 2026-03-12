@@ -65,3 +65,80 @@ nolimit-ds-test-fauzan
 ```
 ---
 
+# Setup Instructions
+
+# 1.Clone Repository
+ 
+ ```
+ git clone  https://github.com/fauzan123ae/nolimit-ds-test-fauzan.git
+```
+
+Masuk Ke Folder Project:
+```
+cd nolimit-ds-test-fauzan
+```
+
+# 2. Install Dependencies
+
+install Library yang dibutuhkan menggunakan:
+
+```
+pip install -r requirements.txt
+```
+
+# 3. Run Notebook
+
+untuk menjalankan proses training dan evaluasi model:
+
+```
+notebooks/sentiment_analysis.ipynb
+```
+Notebook berisi proses
+
+* load dataset
+* train-test split
+* embedding generation
+* model training
+* model evaluation
+* example prediction
+
+# 4.Run Streamlit App
+```
+streamlit run src/app.py
+```
+
+# 5. Run Streamlit Deployment on Streamlit Cloud
+
+```
+https://nolimit-ds-test-fauzan-testt.streamlit.app/
+```
+
+---
+
+# Model Used
+
+Project ini menggunakan model dari Hugging Face Sentence Transformers untuk membuat text embeddings.
+
+Embedding Model:
+
+```
+sentence-transformers/all-MiniLM-L6-v2
+```
+
+Model ini mengubah teks menjadi vector embeddings yang kemudian digunakan sebagai fitur untuk klasifikasi.
+
+Model Klasifikasi yang digunakan:
+
+```
+Logistic Regression (Scikit-learn)
+```
+
+ Model dilatih menggunakan embedding vector untuk memprediksi sentimen teks.
+
+ ---
+
+# Author
+
+Fauzan Fathin Zaky
+
+Project ini dibuat untuk keperluan NoLimit Indonesia Data Scientist Hiring Test
